@@ -1,6 +1,10 @@
 #! /bin/bash
-dnf upgrade -y
-a
+sudo dnf upgrade -y
+sudo dnf install powerline-fonts -y
+sudo dnf install git -y
+
+
+sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 
 cat <<EOF | sudo tee /etc/yum.repos.d/vscode.repo
