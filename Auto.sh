@@ -1,14 +1,17 @@
 #! /bin/bash
-sudo dnf upgrade -y
-sudo dnf install zsh -y
-sudo dnf install git -y
-sudo dnf install powerline-fonts -y
-sudo dnf install yakuake -y
-
+dnf update -y; dnf upgrade -y
+dnf install zsh -y
+dnf install git -y
+dnf install powerline-fonts -y
+dnf install yakuake -y
+dnf remove firefox -y
+dnf config-manager --set-enabled google-chrome
+dnf update -y
+dnf install google-chrome-stable -y
 #hyper
-sudo bash -c 'rpm -i <(wget -O - https://releases.hyper.is/download/rpm)'
+rpm -i https://releases.hyper.is/download/rpm
 #VSCode
-sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+rpm --import https://packages.microsoft.com/keys/microsoft.asc
 
 cat <<EOF | sudo tee /etc/yum.repos.d/vscode.repo
 [code]
@@ -19,9 +22,13 @@ gpgcheck=1
 gpgkey=https://packages.microsoft.com/keys/microsoft.asc
 EOF
 dnf check-update
-sudo dnf install -y code
+dnf install -y code
 
 #ohmyzsh
-sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 #powerlevel10k
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
+chsh -s $(which zsh)curl
+
+Google Chrome
