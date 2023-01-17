@@ -3,6 +3,7 @@ sudo dnf upgrade -y
 sudo dnf install zsh -y
 sudo dnf install git -y
 sudo dnf install powerline-fonts -y
+sudo dnf install yakuake -y
 
 #hyper
 sudo bash -c 'rpm -i <(wget -O - https://releases.hyper.is/download/rpm)'
