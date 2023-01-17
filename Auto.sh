@@ -1,5 +1,6 @@
 #! /bin/bash
-sudo dnf update -y; sudo dnf upgrade -y
+sudo dnf upgrade -y
+sudo dnf update -y
 sudo dnf install git -y
 sudo dnf install powerline-fonts -y
 sudo dnf install yakuake -y
