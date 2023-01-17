@@ -31,7 +31,7 @@ EOF
 sudo dnf install -y code
 
 #hyper
-rpm -i https://releases.hyper.is/download/rpm
+sudo rpm -i https://releases.hyper.is/download/rpm
 
 #ohmyzsh
 sudo dnf install zsh -y
@@ -43,4 +43,5 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 sudo chsh -s /bin/zsh root
 chsh -s /bin/zsh anders
 
-zsh
+#zsh
+
