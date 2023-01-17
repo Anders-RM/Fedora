@@ -6,10 +6,18 @@ dnf install git -y
 dnf install powerline-fonts -y
 dnf install yakuake -y
 dnf remove firefox -y
-dnf install google-chrome-stable -y
 
-#hyper
-rpm -i https://releases.hyper.is/download/rpm
+
+#google-chrome
+cat << EOF > /etc/yum.repos.d/google-chrome.repo
+[google-chrome]
+name=google-chrome
+baseurl=http://dl.google.com/linux/chrome/rpm/stable/x86_64
+enabled=1
+gpgcheck=1
+gpgkey=https://dl.google.com/linux/linux_signing_key.pub
+EOF
+dnf install google-chrome-stable -y
 #VSCode
 rpm --import https://packages.microsoft.com/keys/microsoft.asc
 
@@ -21,11 +29,14 @@ enabled=1
 gpgcheck=1
 gpgkey=https://packages.microsoft.com/keys/microsoft.asc
 EOF
-dnf check-update
 dnf install -y code
+
+#hyper
+rpm -i https://releases.hyper.is/download/rpm
 
 #ohmyzsh
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+
 #powerlevel10k
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
