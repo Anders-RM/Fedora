@@ -1,7 +1,5 @@
 #! /bin/bash
-dnf config-manager --set-enabled google-chrome
 dnf update -y; dnf upgrade -y
-dnf install zsh -y
 dnf install git -y
 dnf install powerline-fonts -y
 dnf install yakuake -y
@@ -35,6 +33,7 @@ dnf install -y code
 rpm -i https://releases.hyper.is/download/rpm
 
 #ohmyzsh
+dnf install zsh -y
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
 #powerlevel10k
@@ -42,3 +41,6 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 
 chsh -s /bin/zsh root
 chsh -s /bin/zsh anders
+
+
+zsh
