@@ -1,5 +1,5 @@
 #! /bin/bash
-dnf upgrade
+dnf upgrade -y
 
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 
