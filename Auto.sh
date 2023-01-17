@@ -1,13 +1,13 @@
 #! /bin/bash
+dnf config-manager --set-enabled google-chrome
 dnf update -y; dnf upgrade -y
 dnf install zsh -y
 dnf install git -y
 dnf install powerline-fonts -y
 dnf install yakuake -y
 dnf remove firefox -y
-dnf config-manager --set-enabled google-chrome
-dnf update -y
 dnf install google-chrome-stable -y
+
 #hyper
 rpm -i https://releases.hyper.is/download/rpm
 #VSCode
@@ -29,6 +29,5 @@ sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools
 #powerlevel10k
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
-chsh -s $(which zsh)curl
-
-Google Chrome
+chsh -s /bin/zsh root
+chsh -s /bin/zsh anders
