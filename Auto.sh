@@ -6,8 +6,6 @@ sudo dnf install powerline-fonts -y
 
 #hyper
 sudo bash -c 'rpm -i <(wget -O - https://releases.hyper.is/download/rpm)'
-#ohmyzsh
-sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 #powerlevel10k
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 #VSCode
@@ -24,3 +22,5 @@ EOF
 dnf check-update
 sudo dnf install -y code
 
+#ohmyzsh
+sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
