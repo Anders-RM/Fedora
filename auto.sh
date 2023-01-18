@@ -6,9 +6,8 @@ sudo dnf install powerline-fonts -y
 sudo dnf install yakuake -y
 sudo dnf remove firefox -y
 
-
 #google-chrome
-cat << EOF > /etc/yum.repos.d/google-chrome.repo
+cat <<EOF | sudo tee /etc/yum.repos.d/google-chrome.repo
 [google-chrome]
 name=google-chrome
 baseurl=http://dl.google.com/linux/chrome/rpm/stable/x86_64
@@ -17,9 +16,9 @@ gpgcheck=1
 gpgkey=https://dl.google.com/linux/linux_signing_key.pub
 EOF
 sudo dnf install google-chrome-stable -y
+
 #VSCode
 rpm --import https://packages.microsoft.com/keys/microsoft.asc
-
 cat <<EOF | sudo tee /etc/yum.repos.d/vscode.repo
 [code]
 name=Visual Studio Code
