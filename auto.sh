@@ -35,19 +35,21 @@ sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools
 
 #powerlevel10k
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
 wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
 wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf
 wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf
 wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf
+
 mv MesloLGS\ NF\ Bold\ Italic.ttf /usr/share/fonts/
 mv MesloLGS\ NF\ Bold.ttf /usr/share/fonts/
 mv MesloLGS\ NF\ Regular.ttf /usr/share/fonts/
 mv MesloLGS\ NF\ Bold\ Italic.ttf /usr/share/fonts/
+
 cp .zshrc ~
+
 sudo chsh -s $(which zsh)
 chsh -s $(which zsh)
-
-#zsh
 
 lookandfeeltool -a org.kde.breezedark.desktop
 kwriteconfig5 --file ~/.config/kcminputrc --group Mouse --key cursorTheme Adwaita
