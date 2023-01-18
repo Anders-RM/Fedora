@@ -36,8 +36,8 @@ sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools
 #powerlevel10k
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
-sudo chsh -s /bin/zsh root
-chsh -s /bin/zsh anders
+sudo chsh -s $(which zsh)
+chsh -s $(which zsh)
 
 #zsh
 
