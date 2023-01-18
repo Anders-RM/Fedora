@@ -44,4 +44,3 @@ sudo chsh -s /bin/zsh root
 chsh -s /bin/zsh anders
 
 #zsh
-
