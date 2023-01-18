@@ -29,9 +29,6 @@ gpgkey=https://packages.microsoft.com/keys/microsoft.asc
 EOF
 sudo dnf install -y code
 
-#hyper
-sudo rpm -i https://releases.hyper.is/download/rpm
-
 #ohmyzsh
 sudo dnf install zsh -y
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
@@ -43,3 +40,7 @@ sudo chsh -s /bin/zsh root
 chsh -s /bin/zsh anders
 
 #zsh
+
+lookandfeeltool -a org.kde.breezedark.desktop
+kwriteconfig5 --file ~/.config/kcminputrc --group Mouse --key cursorTheme Adwaita
+cp /usr/share/applications/org.kde.yakuake.desktop ~/.config/autostart/org.kde.yakuake.desktop
