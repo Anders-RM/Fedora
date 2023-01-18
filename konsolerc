@@ -3,20 +3,3 @@ DefaultProfile=Anders.profile
 
 [General]
 ConfigVersion=1
-
-[MainWindow]
-State=AAAA/wAAAAD9AAAAAQAAAAAAAAAAAAAAAPwCAAAAAvsAAAAiAFEAdQBpAGMAawBDAG8AbQBtAGEAbgBkAHMARABvAGMAawAAAAAA/////wAAAXwBAAAD+wAAABwAUwBTAEgATQBhAG4AYQBnAGUAcgBEAG8AYwBrAAAAAAD/////AAABFQEAAAMAAAOPAAAB+gAAAAQAAAAEAAAACAAAAAj8AAAAAQAAAAIAAAACAAAAFgBtAGEAaQBuAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAAAAAAAAAABwAcwBlAHMAcwBpAG8AbgBUAG8AbwBsAGIAYQByAQAAAOj/////AAAAAAAAAAA=
-ToolBarsMovable=Disabled
-Virtual1=Virtual1
-Virtual1 Height 1718x928 Virtual1=582
-Virtual1 Height 1920x1080 Virtual1=582
-Virtual1 Width 1718x928 Virtual1=911
-Virtual1 Width 1920x1080 Virtual1=911
-Virtual1 Window-Maximized 1718x928 Virtual1=true
-Virtual1 XPosition 1718x928 Virtual1=155
-Virtual1 XPosition 1920x1080 Virtual1=430
-Virtual1 YPosition 1718x928 Virtual1=76
-Virtual1 YPosition 1920x1080 Virtual1=315
-
-[UiSettings]
-ColorScheme=
