@@ -46,4 +46,4 @@ kwriteconfig5 --file ~/.config/kcminputrc --group Mouse --key cursorTheme Adwait
 cp /usr/share/applications/org.kde.yakuake.desktop ~/.config/autostart/org.kde.yakuake.desktop
 cp Anders.profile ~/.local/share/konsole/Anders.profile
 cp konsolerc ~/.config/konsolerc
-cp konsolerc ~/.config/yakuakerc
+cp yakuakerc ~/.config/yakuakerc
