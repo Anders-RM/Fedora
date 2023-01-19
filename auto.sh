@@ -18,7 +18,6 @@ EOF
 sudo dnf install google-chrome-stable -y
 
 #VSCode
-rpm --import https://packages.microsoft.com/keys/microsoft.asc
 cat <<EOF | sudo tee /etc/yum.repos.d/vscode.repo
 [code]
 name=Visual Studio Code
@@ -41,10 +40,10 @@ wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20B
 wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf
 wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf
 
-mv MesloLGS\ NF\ Bold\ Italic.ttf /usr/share/fonts/
-mv MesloLGS\ NF\ Bold.ttf /usr/share/fonts/
-mv MesloLGS\ NF\ Regular.ttf /usr/share/fonts/
-mv MesloLGS\ NF\ Bold\ Italic.ttf /usr/share/fonts/
+sudo mv MesloLGS\ NF\ Bold\ Italic.ttf /usr/share/fonts/
+sudo mv MesloLGS\ NF\ Bold.ttf /usr/share/fonts/
+sudo mv MesloLGS\ NF\ Regular.ttf /usr/share/fonts/
+sudo mv MesloLGS\ NF\ Bold\ Italic.ttf /usr/share/fonts/
 
 cp .zshrc ~
 
