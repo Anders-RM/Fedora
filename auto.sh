@@ -52,6 +52,7 @@ chsh -s $(which zsh)
 
 lookandfeeltool -a org.kde.breezedark.desktop
 kwriteconfig5 --file ~/.config/kcminputrc --group Mouse --key cursorTheme Adwaita
+mkdir -p ~/.config/autostart
 cp /usr/share/applications/org.kde.yakuake.desktop ~/.config/autostart/org.kde.yakuake.desktop
 cp Anders.profile ~/.local/share/konsole/Anders.profile
 cp konsolerc ~/.config/konsolerc
