@@ -5,6 +5,7 @@ sudo dnf install git -y
 sudo dnf install powerline-fonts -y
 sudo dnf install yakuake -y
 sudo dnf remove firefox -y
+sudo dnf install python-pip python-devel -y
 
 #google-chrome
 cat <<EOF | sudo tee /etc/yum.repos.d/google-chrome.repo
@@ -27,13 +28,14 @@ gpgcheck=1
 gpgkey=https://packages.microsoft.com/keys/microsoft.asc
 EOF
 sudo dnf install -y code
-
+sudo pip install thefuck
 #ohmyzsh
 sudo dnf install zsh -y
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
 #powerlevel10k
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
 wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf
