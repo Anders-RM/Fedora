@@ -47,7 +47,7 @@ wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20B
 sudo mv MesloLGS\ NF\ Bold\ Italic.ttf /usr/share/fonts/
 sudo mv MesloLGS\ NF\ Bold.ttf /usr/share/fonts/
 sudo mv MesloLGS\ NF\ Regular.ttf /usr/share/fonts/
-sudo mv MesloLGS\ NF\ Bold\ Italic.ttf /usr/share/fonts/
+sudo mv MesloLGS\ NF\ Italic.ttf /usr/share/fonts/
 
 cp .zshrc ~
 cp .p10k.zsh ~
@@ -67,4 +67,4 @@ cp open_as_root.desktop ~/.local/share/kservices5/ServiceMenus
 cp dolphinrc ~/.config/dolphinrc
 cp plasma-org.kde.plasma.desktop-appletsrc ~/.config/plasma-org.kde.plasma.desktop-appletsrc
 
-qdbus org.kde.ksmserver /KSMServer org.kde.KSMServerInterface.logout 0 3 3
+#qdbus org.kde.ksmserver /KSMServer org.kde.KSMServerInterface.logout 0 3 3
