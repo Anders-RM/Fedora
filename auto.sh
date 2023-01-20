@@ -28,13 +28,18 @@ gpgcheck=1
 gpgkey=https://packages.microsoft.com/keys/microsoft.asc
 EOF
 sudo dnf install -y code
+
+#thefuck
 sudo pip install thefuck
+
+#git config
+git config --global user.email "andersrm1808@gmial.com"
+git config --global user.name "anddersrm1808"
 
 #ohmyzsh
 sudo dnf install zsh -y
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-git config --global user.email "andersrm1808@gmial.com"
-git config --global user.name "anddersrm1808"
+
 #powerlevel10k
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
@@ -55,6 +60,7 @@ mv .p10k.zsh ~
 sudo chsh -s $(which zsh)
 chsh -s $(which zsh)
 
+#other
 lookandfeeltool -a org.kde.breezedark.desktop
 kwriteconfig5 --file ~/.config/kcminputrc --group Mouse --key cursorTheme Adwaita
 mkdir -p ~/.config/autostart
@@ -65,6 +71,6 @@ mv yakuakerc ~/.config/yakuakerc
 mkdir -p ~/.local/share/kservices5/ServiceMenus
 mv open_as_root.desktop ~/.local/share/kservices5/ServiceMenus
 mv dolphinrc ~/.config/dolphinrc
-mv plasma-org.kde.plasma.desktop-appletsrc ~/.config/plasma-org.kde.plasma.desktop-appletsrc
+sudo mv plasma-org.kde.plasma.desktop-appletsrc ~/.config/plasma-org.kde.plasma.desktop-appletsrc
 
 #qdbus org.kde.ksmserver /KSMServer org.kde.KSMServerInterface.logout 0 3 3
