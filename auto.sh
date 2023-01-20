@@ -29,6 +29,7 @@ gpgkey=https://packages.microsoft.com/keys/microsoft.asc
 EOF
 sudo dnf install -y code
 sudo pip install thefuck
+
 #ohmyzsh
 sudo dnf install zsh -y
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
@@ -63,3 +64,5 @@ mkdir -p ~/.local/share/kservices5/ServiceMenus
 cp open_as_root.desktop ~/.local/share/kservices5/ServiceMenus
 cp dolphinrc ~/.config/dolphinrc
 cp plasma-org.kde.plasma.desktop-appletsrc ~/.config/plasma-org.kde.plasma.desktop-appletsrc
+
+logout
