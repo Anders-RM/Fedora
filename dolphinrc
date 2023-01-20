@@ -12,6 +12,11 @@ ViewPropsTimestamp=2023,1,19,11,19,50.507
 Places Icons Auto-resize=false
 Places Icons Static Size=22
 
+[KPropertiesDialog]
+Virtual1 Height 2354x1276 Virtual1=532
+Virtual1 Width 2354x1276 Virtual1=438
+Virtual1 Window-Maximized 2354x1276 Virtual1=true
+
 [MainWindow]
 MenuBar=Disabled
 ToolBarsMovable=Disabled

@@ -33,7 +33,8 @@ sudo pip install thefuck
 #ohmyzsh
 sudo dnf install zsh -y
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-
+git config --global user.email "andersrm1808@gmial.com"
+git config --global user.name "anddersrm1808"
 #powerlevel10k
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
@@ -49,6 +50,7 @@ sudo mv MesloLGS\ NF\ Regular.ttf /usr/share/fonts/
 sudo mv MesloLGS\ NF\ Bold\ Italic.ttf /usr/share/fonts/
 
 cp .zshrc ~
+cp .p10k.zsh ~
 
 sudo chsh -s $(which zsh)
 chsh -s $(which zsh)
@@ -65,3 +67,4 @@ cp open_as_root.desktop ~/.local/share/kservices5/ServiceMenus
 cp dolphinrc ~/.config/dolphinrc
 cp plasma-org.kde.plasma.desktop-appletsrc ~/.config/plasma-org.kde.plasma.desktop-appletsrc
 
+qdbus org.kde.ksmserver /KSMServer org.kde.KSMServerInterface.logout 0 3 3
