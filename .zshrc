@@ -75,6 +75,7 @@ git
 sudo
 copybuffer
 zsh-autosuggestions
+zsh-interactive-cd
 )
 
 source $ZSH/oh-my-zsh.sh

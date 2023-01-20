@@ -61,3 +61,5 @@ cp konsolerc ~/.config/konsolerc
 cp yakuakerc ~/.config/yakuakerc
 mkdir -p ~/.local/share/kservices5/ServiceMenus
 cp open_as_root.desktop ~/.local/share/kservices5/ServiceMenus
+cp dolphinrc ~/.config/dolphinrc
+cp plasma-org.kde.plasma.desktop-appletsrc ~/.config/plasma-org.kde.plasma.desktop-appletsrc
