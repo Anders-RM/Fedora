@@ -49,8 +49,8 @@ sudo mv MesloLGS\ NF\ Bold.ttf /usr/share/fonts/
 sudo mv MesloLGS\ NF\ Regular.ttf /usr/share/fonts/
 sudo mv MesloLGS\ NF\ Italic.ttf /usr/share/fonts/
 
-cp .zshrc ~
-cp .p10k.zsh ~
+mv .zshrc ~
+mv .p10k.zsh ~
 
 sudo chsh -s $(which zsh)
 chsh -s $(which zsh)
@@ -58,13 +58,13 @@ chsh -s $(which zsh)
 lookandfeeltool -a org.kde.breezedark.desktop
 kwriteconfig5 --file ~/.config/kcminputrc --group Mouse --key cursorTheme Adwaita
 mkdir -p ~/.config/autostart
-cp /usr/share/applications/org.kde.yakuake.desktop ~/.config/autostart/org.kde.yakuake.desktop
-cp Anders.profile ~/.local/share/konsole/Anders.profile
-cp konsolerc ~/.config/konsolerc
-cp yakuakerc ~/.config/yakuakerc
+mv /usr/share/applications/org.kde.yakuake.desktop ~/.config/autostart/org.kde.yakuake.desktop
+mv Anders.profile ~/.local/share/konsole/Anders.profile
+mv konsolerc ~/.config/konsolerc
+mv yakuakerc ~/.config/yakuakerc
 mkdir -p ~/.local/share/kservices5/ServiceMenus
-cp open_as_root.desktop ~/.local/share/kservices5/ServiceMenus
-cp dolphinrc ~/.config/dolphinrc
-cp plasma-org.kde.plasma.desktop-appletsrc ~/.config/plasma-org.kde.plasma.desktop-appletsrc
+mv open_as_root.desktop ~/.local/share/kservices5/ServiceMenus
+mv dolphinrc ~/.config/dolphinrc
+mv plasma-org.kde.plasma.desktop-appletsrc ~/.config/plasma-org.kde.plasma.desktop-appletsrc
 
 #qdbus org.kde.ksmserver /KSMServer org.kde.KSMServerInterface.logout 0 3 3
