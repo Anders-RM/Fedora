@@ -65,4 +65,3 @@ cp open_as_root.desktop ~/.local/share/kservices5/ServiceMenus
 cp dolphinrc ~/.config/dolphinrc
 cp plasma-org.kde.plasma.desktop-appletsrc ~/.config/plasma-org.kde.plasma.desktop-appletsrc
 
-logout
