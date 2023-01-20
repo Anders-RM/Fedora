@@ -7,6 +7,7 @@ Name=Anders
 Parent=FALLBACK/
 
 [Interaction Options]
+AutoCopySelectedText=true
 MiddleClickPasteMode=1
 
 [Keyboard]
