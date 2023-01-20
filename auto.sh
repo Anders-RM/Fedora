@@ -57,3 +57,5 @@ cp /usr/share/applications/org.kde.yakuake.desktop ~/.config/autostart/org.kde.y
 cp Anders.profile ~/.local/share/konsole/Anders.profile
 cp konsolerc ~/.config/konsolerc
 cp yakuakerc ~/.config/yakuakerc
+mkdir -p ~/.local/share/kservices5/ServiceMenus
+cp open_as_root.desktop ~/.local/share/kservices5/ServiceMenus
