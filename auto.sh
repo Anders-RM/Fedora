@@ -57,9 +57,6 @@ sudo mv MesloLGS\ NF\ Italic.ttf /usr/share/fonts/
 mv .zshrc ~
 mv .p10k.zsh ~
 
-sudo chsh -s $(which zsh)
-chsh -s $(which zsh)
-
 #other
 lookandfeeltool -a org.kde.breezedark.desktop
 kwriteconfig5 --file ~/.config/kcminputrc --group Mouse --key cursorTheme Adwaita
@@ -72,5 +69,8 @@ mkdir -p ~/.local/share/kservices5/ServiceMenus
 mv open_as_root.desktop ~/.local/share/kservices5/ServiceMenus
 mv dolphinrc ~/.config/dolphinrc
 sudo mv plasma-org.kde.plasma.desktop-appletsrc ~/.config/plasma-org.kde.plasma.desktop-appletsrc
+
+sudo chsh -s $(which zsh)
+chsh -s $(which zsh)
 
 #qdbus org.kde.ksmserver /KSMServer org.kde.KSMServerInterface.logout 0 3 3
