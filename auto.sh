@@ -43,7 +43,7 @@ enabled=1
 gpgcheck=1
 gpgkey=https://packages.microsoft.com/keys/microsoft.asc
 EOF
-sudo dnf install microsoft-edge-stable
+sudo dnf install microsoft-edge-stable -y
 
 #thefuck
 sudo pip install thefuck
