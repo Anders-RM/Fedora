@@ -6,6 +6,11 @@ sudo dnf install powerline-fonts -y
 sudo dnf install yakuake -y
 sudo dnf remove firefox -y
 sudo dnf install python-pip python-devel -y
+sudo dnf install xrdp -y
+sudo systemctl enable xrdp 
+sudo systemctl start xrdp 
+sudo chcon --type=bin_t /usr/sbin/xrdp 
+sudo chcon --type=bin_t /usr/sbin/xrdp-sesman 
 
 #google-chrome
 cat <<EOF | sudo tee /etc/yum.repos.d/google-chrome.repo
@@ -28,6 +33,17 @@ gpgcheck=1
 gpgkey=https://packages.microsoft.com/keys/microsoft.asc
 EOF
 sudo dnf install -y code
+
+#Edge
+cat <<EOF | sudo tee /etc/yum.repos.d/google-chrome.repo
+[google-chrome]
+name=google-chrome
+baseurl=https://packages.microsoft.com/yumrepos/edge
+enabled=1
+gpgcheck=1
+gpgkey=https://packages.microsoft.com/keys/microsoft.asc
+EOF
+sudo dnf install microsoft-edge-stable
 
 #thefuck
 sudo pip install thefuck
@@ -73,4 +89,4 @@ sudo mv plasma-org.kde.plasma.desktop-appletsrc ~/.config/plasma-org.kde.plasma.
 sudo chsh -s $(which zsh)
 chsh -s $(which zsh)
 
-#qdbus org.kde.ksmserver /KSMServer org.kde.KSMServerInterface.logout 0 3 3
+qdbus org.kde.ksmserver /KSMServer org.kde.KSMServerInterface.logout 0 3 3
