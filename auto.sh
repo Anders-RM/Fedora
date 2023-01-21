@@ -35,9 +35,9 @@ EOF
 sudo dnf install -y code
 
 #Edge
-cat <<EOF | sudo tee /etc/yum.repos.d/google-chrome.repo
-[google-chrome]
-name=google-chrome
+cat <<EOF | sudo tee /etc/yum.repos.d/microsoft-edge.repo
+[microsoft-edge]
+name=microsoft-edge
 baseurl=https://packages.microsoft.com/yumrepos/edge
 enabled=1
 gpgcheck=1
