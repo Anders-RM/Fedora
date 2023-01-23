@@ -7,10 +7,10 @@ sudo dnf install yakuake -y
 sudo dnf remove firefox -y
 sudo dnf install python-pip python-devel -y
 sudo dnf install xrdp -y
-sudo systemctl enable xrdp 
-sudo systemctl start xrdp 
-sudo chcon --type=bin_t /usr/sbin/xrdp 
-sudo chcon --type=bin_t /usr/sbin/xrdp-sesman 
+sudo systemctl enable xrdp
+sudo systemctl start xrdp
+sudo chcon --type=bin_t /usr/sbin/xrdp
+sudo chcon --type=bin_t /usr/sbin/xrdp-sesman
 
 #google-chrome
 cat <<EOF | sudo tee /etc/yum.repos.d/google-chrome.repo
