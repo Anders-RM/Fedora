@@ -49,6 +49,7 @@ sudo dnf install microsoft-edge-stable -y
 sudo pip install thefuck
 
 #git config
+ssh-keygen -t rsa -C "andersrm1808@gmial.com"
 git config --global user.email "andersrm1808@gmial.com"
 git config --global user.name "anddersrm1808"
 
