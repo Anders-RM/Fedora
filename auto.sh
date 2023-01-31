@@ -4,24 +4,12 @@ sudo dnf update -y
 sudo dnf install git -y
 sudo dnf install powerline-fonts -y
 sudo dnf install yakuake -y
-sudo dnf remove firefox -y
 sudo dnf install python-pip python-devel -y
 sudo dnf install xrdp -y
 sudo systemctl enable xrdp 
 sudo systemctl start xrdp 
 sudo chcon --type=bin_t /usr/sbin/xrdp 
 sudo chcon --type=bin_t /usr/sbin/xrdp-sesman 
-
-#google-chrome
-cat <<EOF | sudo tee /etc/yum.repos.d/google-chrome.repo
-[google-chrome]
-name=google-chrome
-baseurl=http://dl.google.com/linux/chrome/rpm/stable/x86_64
-enabled=1
-gpgcheck=1
-gpgkey=https://dl.google.com/linux/linux_signing_key.pub
-EOF
-sudo dnf install google-chrome-stable -y
 
 #VSCode
 cat <<EOF | sudo tee /etc/yum.repos.d/vscode.repo
