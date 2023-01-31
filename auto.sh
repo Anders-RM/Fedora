@@ -78,4 +78,5 @@ sudo mv plasma-org.kde.plasma.desktop-appletsrc ~/.config/plasma-org.kde.plasma.
 sudo chsh -s $(which zsh)
 chsh -s $(which zsh)
 
+#logout
 qdbus org.kde.ksmserver /KSMServer org.kde.KSMServerInterface.logout 0 3 3
