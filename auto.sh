@@ -6,10 +6,10 @@ sudo dnf install powerline-fonts -y
 sudo dnf install yakuake -y
 sudo dnf install python-pip python-devel -y
 sudo dnf install xrdp -y
-sudo systemctl enable xrdp 
-sudo systemctl start xrdp 
-sudo chcon --type=bin_t /usr/sbin/xrdp 
-sudo chcon --type=bin_t /usr/sbin/xrdp-sesman 
+sudo systemctl enable xrdp
+sudo systemctl start xrdp
+sudo chcon --type=bin_t /usr/sbin/xrdp
+sudo chcon --type=bin_t /usr/sbin/xrdp-sesman
 
 #VSCode
 cat <<EOF | sudo tee /etc/yum.repos.d/vscode.repo
@@ -37,6 +37,7 @@ sudo dnf install microsoft-edge-stable -y
 sudo pip install thefuck
 
 #git config
+ssh-keygen -q -t rsa -N '@Ndersraeder' -f ~/.ssh/id_rsa -C "andersrm1808@gmial.com" <<<y >/dev/null 2>&1
 git config --global user.email "andersrm1808@gmial.com"
 git config --global user.name "anddersrm1808"
 
