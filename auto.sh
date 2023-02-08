@@ -6,6 +6,7 @@ sudo dnf install powerline-fonts -y
 sudo dnf install yakuake -y
 sudo dnf install python-pip python-devel -y
 sudo dnf install xrdp -y
+sudo dnf install fzf -y
 sudo systemctl enable xrdp
 sudo systemctl start xrdp
 sudo chcon --type=bin_t /usr/sbin/xrdp
@@ -32,6 +33,11 @@ gpgcheck=1
 gpgkey=https://packages.microsoft.com/keys/microsoft.asc
 EOF
 sudo dnf install microsoft-edge-stable -y
+#rpmfusion (need for NVIDIA drivers)
+sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+#NVIDIA drivers
+sudo dnf install akmod-nvidia
+sudo dnf install xorg-x11-drv-nvidia-cuda
 
 #thefuck
 sudo pip install thefuck
