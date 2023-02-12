@@ -39,8 +39,6 @@ sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-releas
 sudo dnf install akmod-nvidia
 sudo dnf install xorg-x11-drv-nvidia-cuda
 
-#thefuck
-sudo pip install thefuck
 
 #git config
 ssh-keygen -q -t rsa -N '@Ndersraeder' -f ~/.ssh/id_rsa -C "andersrm1808@gmial.com" <<<y >/dev/null 2>&1

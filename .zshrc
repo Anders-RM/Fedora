@@ -83,6 +83,10 @@ sudo
 copybuffer
 zsh-autosuggestions
 zsh-interactive-cd
+colored-man-pages
+command-not-found
+extract
+gh
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -112,7 +116,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-eval $(thefuck --alias FUCK)
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
