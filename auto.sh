@@ -5,8 +5,8 @@ sudo dnf install git -y
 sudo dnf install powerline-fonts -y
 sudo dnf install yakuake -y
 sudo dnf install python-pip python-devel -y
-sudo dnf install xrdp -y
 sudo dnf install fzf -y
+sudo dnf install xrdp -y
 sudo systemctl enable xrdp
 sudo systemctl start xrdp
 sudo chcon --type=bin_t /usr/sbin/xrdp
